@@ -1,0 +1,39 @@
+fragment CountryCodeAttributes on CountryCode {
+    officialName
+    sovereignty
+    alpha2Code
+    alpha3Code
+    numericCode
+    ccTLD
+
+    _id
+    name
+    type
+    status
+    description
+    createdBy
+    createdAt
+    updatedBy
+    updatedAt
+
+    Files {
+        _id
+        name
+        localUrl
+        cloudUrl
+        size
+        mimeType
+        type
+        status
+    }
+
+    histories {
+        party {
+            _id
+            type
+            name
+        }
+        description
+        timestamp
+    }
+}

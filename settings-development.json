@@ -1,0 +1,15 @@
+{
+  "public": {
+    "graphQL": {
+      "httpUri": "http://192.168.100.4:3000/graphql"
+    },
+    "productName": "catalystengine",
+    "copyrightStartYear": "2020"
+  },
+  "private": {
+    "MAIL_URL": "",
+    "FILES_PATH": "",
+    "supportEmail": "Johnson Chandra <johnson.chandra@gmail.com>",
+    "rolesGlobal": ["user", "member", "spv", "admin"]
+  }
+}

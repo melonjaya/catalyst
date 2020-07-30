@@ -1,0 +1,7 @@
+#import "./fragments.gql"
+
+query detailCountryCode($_id: String) {
+  detailCountryCode(_id: $_id) {
+    ...CountryCodeAttributes
+  }
+}

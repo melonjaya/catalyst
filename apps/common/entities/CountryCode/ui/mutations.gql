@@ -1,0 +1,29 @@
+#import "./fragments.gql"
+
+mutation addCountryCode {
+  addCountryCode {
+    ...CountryCodeAttributes
+  }
+}
+mutation updateCountryCode($inputCountryCode: CountryCodeInput) {
+  updateCountryCode(inputCountryCode: $inputCountryCode) {
+    ...CountryCodeAttributes
+  }
+}
+mutation removeCountryCode($_id: String!) {
+  removeCountryCode(_id: $_id) {
+    _id
+  }
+}
+
+mutation setCountryCodeStatusToActive($_id: String!, $description: String) {
+  setCountryCodeStatusToActive(_id: $_id, description: $description) {
+    _id
+  }
+}
+mutation setCountryCodeStatusToClosed($_id: String!, $description: String) {
+  setCountryCodeStatusToClosed(_id: $_id, description: $description) {
+    _id
+  }
+}
+
